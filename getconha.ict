@@ -1,0 +1,1646 @@
+ctjsVersion: 3.2.0
+language: typescript
+notes: awa/* empty */
+libs:
+  place:
+    gridX: 1024
+    gridY: 1024
+  pointer: {}
+  keyboard: {}
+  keyboard.polyfill: {}
+  sound.howler: {}
+  sprite:
+    spritedef: |-
+      ct.sprite(
+          'BlueMacaw', 'idle',
+          [0,2]
+      );
+
+      ct.sprite(
+          'BlueMacaw', 'walk',
+          [0,1]
+      );
+  random: {}
+  nakama:
+    undefined: ''
+    clientHost: localhost
+    clientPort: 7350
+    useSSL: false
+    debugMode: true
+  fittoscreen:
+    mode: fastScale
+textures:
+  - lastmod: 1683817981868
+    type: texture
+    name: CubicUnicorn
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iNT2C2zrFRw8zqt.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: NT2C2zrFRw8zqt
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicUnicorn.png
+  - lastmod: 1683817981870
+    type: texture
+    name: CubicZebra
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: ihfg9LqHbm52wkw.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: hfg9LqHbm52wkw
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicZebra.png
+  - lastmod: 1683817981870
+    type: texture
+    name: CubicWolf
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: i564FNtjfFLG8bF.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: 564FNtjfFLG8bF
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicWolf.png
+  - lastmod: 1683817981871
+    type: texture
+    name: CubicTurtle
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: i6QKzfH6d1HB3G7.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: 6QKzfH6d1HB3G7
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicTurtle.png
+  - lastmod: 1683817981871
+    type: texture
+    name: CubicSnake
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iLBG9BjCFM5tL8f.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: LBG9BjCFM5tL8f
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicSnake.png
+  - lastmod: 1683817981872
+    type: texture
+    name: CubicToucan
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: i21KJ8Wf6R3LG5B.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: 21KJ8Wf6R3LG5B
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicToucan.png
+  - lastmod: 1683817981872
+    type: texture
+    name: CubicRhino
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iWz4wk76hdWmQMw.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: Wz4wk76hdWmQMw
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicRhino.png
+  - lastmod: 1683817981873
+    type: texture
+    name: CubicShiba
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iFzC1Lj1Tth2KPf.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: FzC1Lj1Tth2KPf
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicShiba.png
+  - lastmod: 1683817981873
+    type: texture
+    name: CubicSheep
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: i6pf7dFC5BJGqLm.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: 6pf7dFC5BJGqLm
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicSheep.png
+  - lastmod: 1683817981874
+    type: texture
+    name: CubicPolar
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: ifFT2TK7BB5c2Bt.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: fFT2TK7BB5c2Bt
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicPolar.png
+  - lastmod: 1683817981874
+    type: texture
+    name: CubicRacoon
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iLFTjHFc99GBMGJ.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: LFTjHFc99GBMGJ
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicRacoon.png
+  - lastmod: 1683817981875
+    type: texture
+    name: CubicPig
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: ik54qmGcLqp6L2R.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: k54qmGcLqp6L2R
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicPig.png
+  - lastmod: 1683817981875
+    type: texture
+    name: CubicMoose
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: ihJBkN8rH8QQ97q.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: hJBkN8rH8QQ97q
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicMoose.png
+  - lastmod: 1683817981875
+    type: texture
+    name: CubicPenguin
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: if1JB2hddgJ8q69.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: f1JB2hddgJ8q69
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicPenguin.png
+  - lastmod: 1683817981876
+    type: texture
+    name: CubicPanda
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iBcWNq5Fc2Pdgdn.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: BcWNq5Fc2Pdgdn
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicPanda.png
+  - lastmod: 1683817981876
+    type: texture
+    name: CubicOwl
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iwkwCbbcmLCGcbg.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: wkwCbbcmLCGcbg
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicOwl.png
+  - lastmod: 1683817981877
+    type: texture
+    name: CubicMicoLeaoDourado
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iz72rCjkfC99PdK.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: z72rCjkfC99PdK
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicMicoLeaoDourado.png
+  - lastmod: 1683817981877
+    type: texture
+    name: CubicRat
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iGqKK2CbnLCjdPk.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: GqKK2CbnLCjdPk
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicRat.png
+  - lastmod: 1683817981878
+    type: texture
+    name: CubicLion
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: izpfwdkqhWWBRQ7.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: zpfwdkqhWWBRQ7
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicLion.png
+  - lastmod: 1683817981878
+    type: texture
+    name: CubicMonkey
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: ikkh3Qb9zP8gpd3.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: kkh3Qb9zP8gpd3
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicMonkey.png
+  - lastmod: 1683817981879
+    type: texture
+    name: CubicHorse
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iW9cGRtKB1j11H6.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: W9cGRtKB1j11H6
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicHorse.png
+  - lastmod: 1683817981879
+    type: texture
+    name: CubicJaguatirica
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: i2WNFQChW3fGNCD.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: 2WNFQChW3fGNCD
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicJaguatirica.png
+  - lastmod: 1683817981880
+    type: texture
+    name: CubicLoboGuara
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iqrQ7ngPRt5t6df.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: qrQ7ngPRt5t6df
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicLoboGuara.png
+  - lastmod: 1683817981880
+    type: texture
+    name: CubicGrizzly
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: i34wcRFqMtmmHMJ.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: 34wcRFqMtmmHMJ
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicGrizzly.png
+  - lastmod: 1683817981880
+    type: texture
+    name: CubicFrog
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: irJmkcK3L9mzJBC.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: rJmkcK3L9mzJBC
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicFrog.png
+  - lastmod: 1683817981881
+    type: texture
+    name: CubicGiraffe
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iFfb1TPrgpBJFkH.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: Ffb1TPrgpBJFkH
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicGiraffe.png
+  - lastmod: 1683817981881
+    type: texture
+    name: CubicDuck
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: ibfQ86J5qqj8JKm.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: bfQ86J5qqj8JKm
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicDuck.png
+  - lastmod: 1683817981882
+    type: texture
+    name: CubicFish
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: icf2pgkkkdBBTgc.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: cf2pgkkkdBBTgc
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicFish.png
+  - lastmod: 1683817981882
+    type: texture
+    name: CubicFlamingo
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: inN2wqPgPL21frb.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: nN2wqPgPL21frb
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicFlamingo.png
+  - lastmod: 1683817981882
+    type: texture
+    name: CubicElephant
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iRDh6t4W93mRJKm.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: RDh6t4W93mRJKm
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicElephant.png
+  - lastmod: 1683817981883
+    type: texture
+    name: CubicDolphin
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: ijj7j1JNmmmmz41.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: jj7j1JNmmmmz41
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicDolphin.png
+  - lastmod: 1683817981883
+    type: texture
+    name: CubicFox
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: i9GP4dG4MR3b1M6.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: 9GP4dG4MR3b1M6
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicFox.png
+  - lastmod: 1683817981883
+    type: texture
+    name: CubicCat
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iQwf6TM419cpT2n.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: Qwf6TM419cpT2n
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicCat.png
+  - lastmod: 1683817981883
+    type: texture
+    name: CubicChicken
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: ihp5Wg8rgfT9gjh.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: hp5Wg8rgfT9gjh
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicChicken.png
+  - lastmod: 1683817981884
+    type: texture
+    name: CubicBunny
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: i1Lk5mK6mkRtrpm.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: 1Lk5mK6mkRtrpm
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicBunny.png
+  - lastmod: 1683817981884
+    type: texture
+    name: CubicBull
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iLLpbGkBCc6Lhq9.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: LLpbGkBCc6Lhq9
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicBull.png
+  - lastmod: 1683817981884
+    type: texture
+    name: CubicCow
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iGqGLmn1K1bFDnw.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: GqGLmn1K1bFDnw
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicCow.png
+  - lastmod: 1683817981885
+    type: texture
+    name: CubicChameleon
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 84
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iQP6Kh97mgGzBjF.png
+    shape: rect
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: QP6Kh97mgGzBjF
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicChameleon.png
+  - lastmod: 1683838436537
+    type: texture
+    name: CubicBat
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 10.125
+      - 9.84375
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 21
+    height: 16
+    offx: 0
+    offy: 0
+    origname: iD2BqbJm7BpnTWh.png
+    shape: circle
+    left: 0
+    right: 84
+    top: 0
+    bottom: 16
+    uid: D2BqbJm7BpnTWh
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: /Users/marcobruno/Downloads/Cubic Animals/Animals - Outline/CubicBat.png
+    r: 8
+  - lastmod: 1695684062886
+    type: texture
+    name: BlueMacaw
+    untill: 0
+    grid:
+      - 4
+      - 1
+    axis:
+      - 11.395833333333334
+      - 9.979166666666666
+    marginx: 0
+    marginy: 0
+    imgWidth: 84
+    imgHeight: 16
+    width: 21
+    height: 16
+    offx: 0
+    offy: 0
+    origname: i4df6fzrm1Mzcb1.png
+    shape: strip
+    left: 10
+    right: 11
+    top: 9
+    bottom: 7
+    uid: 4df6fzrm1Mzcb1
+    padding: 1
+    isBlank: false
+    group: !<tag:yaml.org,2002:js/undefined> ''
+    source: >-
+      /Users/marcobruno/Downloads/Cubic Animals/Animals -
+      Outline/CubicAraraAzul.png
+    stripPoints:
+      - x: -5.875
+        'y': -3.9375
+      - x: 3.479166666666666
+        'y': -3.479166666666666
+      - x: 5.9375
+        'y': 1
+      - x: 7.75
+        'y': 3.9375
+      - x: -5.875
+        'y': 4.5625
+    closedStrip: true
+    r: 8
+    symmetryStrip: false
+skeletons: []
+templates:
+  - type: template
+    name: CubicAraraAzul
+    depth: 0
+    texture: 4df6fzrm1Mzcb1
+    playAnimationOnStart: false
+    loopAnimation: true
+    animationFPS: 30
+    visible: true
+    events:
+      - eventKey: OnActionDown
+        code: |
+          if (this.y > this.stage.top) {
+              this.y -= this.$velocity * ct.delta
+              this.$walk()
+          }
+        arguments:
+          action: MoveUp
+        lib: core
+      - eventKey: OnActionDown
+        code: |-
+          if (this.y < this.stage.bottom ) {
+              this.y += this.$velocity * ct.delta
+              this.$walk()
+          }
+        arguments:
+          action: MoveDown
+        lib: core
+      - eventKey: OnCreate
+        code: |
+          this.$velocity = 1
+          this.$maxFramerate = 60
+          this.opCodes = {
+              walk: 1,
+              idle: 2,
+              directionX: 3
+          }
+          this.isJoin = false
+
+          this.stage = {
+              left: this.width / 2,
+              right: ct.camera.width - (this.width / 2),
+              top: this.height / 2,
+              bottom: ct.camera.height - (this.height / 2)
+          }
+
+          console.log('stage', this.stage)
+
+          this.$walk = () => {
+              const {x, y} = this.transform.position
+              this.tex = 'walk'
+              this.animationSpeed = 8/this.$maxFramerate
+
+              if(room?.matchId) {
+                  Nakama.socket?.sendMatchState(room.matchId, this.opCodes.walk, {x, y, animation: 'walk'})
+              }
+          }
+
+          this.$idle = () => {
+              const {x, y} = this.transform.position
+              this.tex = 'idle'
+              this.animationSpeed = 2/this.$maxFramerate
+              
+              if (room?.matchId) {
+                  Nakama.socket?.sendMatchState(room.matchId, this.opCodes.idle, {x ,y, animation: 'idle'})
+              }
+          }
+
+          this.$idle()
+          this.play()
+
+          Nakama.state.player = {
+              cubicAnimal: 'CubicAraraAzulMultiplayer'
+          }
+        arguments: {}
+        lib: core
+      - eventKey: OnActionDown
+        code: |-
+          if (this.x < this.stage.right) {
+              this.x += this.$velocity * ct.delta
+              this.$walk()
+              this.scale.set(-1, 1)
+
+              Nakama.socket.sendMatchState(room.matchId, this.opCodes.directionX, {directionX: 'right'})
+          }
+        arguments:
+          action: MoveRight
+        lib: core
+      - eventKey: OnActionDown
+        code: |-
+          if (this.x > this.stage.left) {
+              this.x -= this.$velocity * ct.delta
+              this.$walk()
+              this.scale.set(1, 1)
+
+              Nakama.socket.sendMatchState(room.matchId, this.opCodes.directionX, {directionX: 'left'})
+          }
+        arguments:
+          action: MoveLeft
+        lib: core
+      - eventKey: OnActionRelease
+        code: this.$idle()
+        arguments:
+          action: Idle
+        lib: core
+    extends: {}
+    lastmod: 1685131892090
+    uid: gpF7tGTMwG49Fh
+  - type: template
+    name: CubicBat
+    depth: 0
+    texture: D2BqbJm7BpnTWh
+    playAnimationOnStart: false
+    loopAnimation: true
+    animationFPS: 30
+    visible: true
+    events:
+      - eventKey: OnStep
+        lib: core
+        code: this.move();
+        arguments: {}
+    extends: {}
+    lastmod: 1683920686669
+    uid: Qm7fQBFLWzr1j8
+  - type: template
+    name: CubicAraraAzulMultiplayer
+    depth: 0
+    texture: 4df6fzrm1Mzcb1
+    playAnimationOnStart: false
+    loopAnimation: true
+    animationFPS: 30
+    visible: true
+    events:
+      - eventKey: OnCreate
+        code: |+
+          this.$velocity = 1
+          this.$maxFramerate = 60
+
+          this.$walk = () => {
+              this.tex = 'walk'
+              this.animationSpeed = 8/this.$maxFramerate
+          }
+
+          this.$idle = () => {
+              this.tex = 'idle'
+              this.animationSpeed = 2/this.$maxFramerate
+          }
+
+          this.$idle()
+          this.play()
+
+        arguments: {}
+        lib: core
+      - eventKey: OnDraw
+        code: |-
+          Nakama.socket.onmatchdata = updateAnimation
+
+          function updateAnimation(result) {
+              const {presence: {session_id}, data: {x, y, animation, directionX}} = result
+
+              if (x != undefined && y != undefined) {
+                  room.players[session_id].x = x
+                  room.players[session_id].y = y
+              }
+
+              if (animation == 'walk') {
+                  room.players[session_id].$walk()
+              }
+
+              if (animation == 'idle') {
+                  room.players[session_id].$idle()
+              }
+
+              if (directionX == 'right') {
+                  room.players[session_id].scale.x = -1
+              }
+
+              if (directionX == 'left') {
+                  room.players[session_id].scale.x = 1
+              }
+          }
+        arguments: {}
+        lib: core
+    extends:
+      alpha: 0.4
+    lastmod: 1684498105489
+    uid: WW1MDgFf9Nm7Q7
+sounds: []
+styles: []
+fonts: []
+rooms:
+  - type: room
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    gridX: 64
+    gridY: 64
+    diagonalGrid: false
+    simulate: true
+    width: 560
+    height: 357
+    restrictCamera: false
+    restrictMaxX: 240
+    restrictMinX: 240
+    restrictMaxY: 135
+    restrictMinY: 135
+    isUi: false
+    name: GetConha
+    backgroundColor: '#345215'
+    follow: -1
+    backgrounds: []
+    copies:
+      - x: 64
+        'y': 128
+        opacity: 1
+        tint: 16777215
+        scale:
+          x: 1
+          'y': 1
+        rotation: 0
+        uid: gpF7tGTMwG49Fh
+        exts: {}
+        customProperties: {}
+    tiles: []
+    extends: {}
+    lastmod: 1685363546515
+    events:
+      - eventKey: OnRoomStart
+        code: |
+          async function joinMatchByQueryParam() {
+              const urlParams = new URLSearchParams(window.location.search)
+              const id = urlParams.get('id')
+              console.log('isJoinMatchQueryParam', isJoinMatchQueryParam)
+              
+              if (id != null && isJoinMatchQueryParam == false) {
+                  isJoinMatchQueryParam = true
+                  console.log('isJoinMatchQueryParam', isJoinMatchQueryParam)
+                  await joinMatch(`${id}.`)
+              }
+          }
+
+          ct.timer.add(2500).then(() => {
+              console.log('2500')
+              joinMatchByQueryParam()
+          })
+        arguments: {}
+        lib: core
+    uid: Ltg655ND53CP4h
+actions:
+  - name: MoveUp
+    methods:
+      - code: keyboard.KeyW
+      - code: keyboard.ArrowUp
+  - name: MoveRight
+    methods:
+      - code: keyboard.KeyD
+      - code: keyboard.ArrowRight
+  - name: MoveDown
+    methods:
+      - code: keyboard.KeyS
+      - code: keyboard.ArrowDown
+  - name: MoveLeft
+    methods:
+      - code: keyboard.KeyA
+      - code: keyboard.ArrowLeft
+  - name: Idle
+    methods:
+      - code: keyboard.KeyA
+      - code: keyboard.KeyS
+      - code: keyboard.KeyD
+      - code: keyboard.KeyW
+      - code: keyboard.ArrowLeft
+      - code: keyboard.ArrowRight
+      - code: keyboard.ArrowDown
+      - code: keyboard.ArrowUp
+emitterTandems: []
+scripts:
+  - name: multiplayer
+    code: >-
+      let isJoinMatchQueryParam = false
+
+      let myPresence= {
+          session_id: '',
+          user_id: '',
+          username: ''
+      }
+
+      const room = {
+          players: [],
+          matchId: undefined,
+          joinSelf: function (session_id) {
+              this.players = {...this.players, [session_id]: 'self' }
+          },
+          join: function(session_id, cubicAnimal = undefined) {
+              if (session_id != myPresence.session_id) {
+                  this.players = {...this.players, [session_id]: spawnPlayer(cubicAnimal)}
+              }
+          },
+          leave: function(session_id, cubicAnimal = undefined) {
+              if (this.players[session_id] != undefined) {
+                  this.players[session_id].kill = true
+                  delete this.players[session_id]
+              }
+          }
+      }
+
+
+      Object.defineProperty(room, 'matchId', {
+          enumerable: true,
+          configurable: true,
+          get: function () {
+              return this._matchId
+          },
+          set: function (value) {
+              if (!this._matchId) {
+                  this._matchId = value
+              }
+          }
+      })
+
+
+      async function createMatch() {
+          const { match_id: matchId, self } = await Nakama.socket.createMatch()
+          myPresence = self
+          room.matchId = matchId
+          room.joinSelf(self.session_id)
+          Nakama.socket.onmatchpresence = handleOnmatchpresence
+          console.log('createMatch', matchId)
+      }
+
+
+      async function joinMatch(matchId) {
+          const { presences, self } = await Nakama.socket.joinMatch(matchId)
+          myPresence = self
+          room.matchId = matchId
+          room.joinSelf(self.session_id)
+          presences.forEach((presence) => room.join(presence.session_id))
+          Nakama.socket.onmatchpresence = handleOnmatchpresence
+
+          return true
+      }
+
+
+      function spawnPlayer(cubicAnimal = Nakama.state.player.cubicAnimal, x =
+      ct.random.range(20, 460), y = ct.random.range(20, 250)) {
+          return ct.templates.copy(cubicAnimal, x, y)
+      }
+
+
+      function handleOnmatchpresence(presences) {
+          presences.joins?.forEach(({session_id}) => {
+              room.join(session_id)
+          })
+          
+          presences.leaves?.forEach(({session_id}) => {
+              room.leave(session_id)
+          })
+      }
+startroom: -1
+contentTypes: []
+groups:
+  fonts: []
+  textures: []
+  styles: []
+  rooms: []
+  templates: []
+  sounds: []
+  emitterTandems: []
+settings:
+  authoring:
+    author: Marco Bruno
+    site: ''
+    title: get-conha
+    version:
+      - 0
+      - 0
+      - 1
+    versionPostfix: ''
+    appId: ''
+  rendering:
+    usePixiLegacy: true
+    maxFPS: 60
+    pixelatedrender: true
+    highDensity: true
+    desktopMode: maximized
+    hideCursor: false
+    mobileScreenOrientation: landscape
+  export:
+    windows: true
+    linux: true
+    mac: true
+    functionWrap: false
+    codeModifier: obfuscate
+  branding:
+    accent: '#446adb'
+    invertPreloaderScheme: true
+    icon: -1
+    splashScreen: -1
+    forceSmoothIcons: false
+    forceSmoothSplashScreen: false
+    hideLoadingLogo: false
+  fps: 30
+palette: []
